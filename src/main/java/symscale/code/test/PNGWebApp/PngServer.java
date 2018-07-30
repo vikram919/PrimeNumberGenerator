@@ -20,12 +20,13 @@ import com.sun.net.httpserver.HttpServer;
 public class PngServer {
 
 	static Connection con;
+	static final int HTTP_PORT = 8080;
 
 	public static void main(String[] args) {
 
 		initDbTable();
 		try {
-			HttpServer server = HttpServer.create(new InetSocketAddress(8081), 0);
+			HttpServer server = HttpServer.create(new InetSocketAddress(HTTP_PORT), 0);
 			HttpContext context = server.createContext("/png");
 			context.setHandler(new PngServer().new MyHandler());
 			server.start();
