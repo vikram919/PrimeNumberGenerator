@@ -9,9 +9,9 @@ public class TestPng {
 
 	@Test
 	public void TesPngStrategy1() {
-		PrimesResult primesResult1 = PngStrategy1.getPrimes(5000, 1000000);
-		PrimesResult primesResult2 = PngStrategy2.getPrimes(5000, 1000000);
-		PrimesResult primesResult3 = PngStrategy3.getPrimes(5000, 1000000);
+		PrimesResult primesResult1 = PngStrategy1.getPrimes(1600, 180000);
+		PrimesResult primesResult2 = PngStrategy2.getPrimes(1600, 180000);
+		PrimesResult primesResult3 = PngStrategy3.getPrimes(1600, 180000);
 		System.out.println(primesResult1.getNoOfPrimes());
 		System.out.println(primesResult1.getTimeElapsed());
 		System.out.println(primesResult2.getNoOfPrimes());

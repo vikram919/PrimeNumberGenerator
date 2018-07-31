@@ -20,7 +20,7 @@ import com.sun.net.httpserver.HttpServer;
 public class PngServer {
 
 	static Connection con;
-	static final int HTTP_PORT = 8080;
+	static final int HTTP_PORT = 8081;
 
 	public static void main(String[] args) {
 
