@@ -51,7 +51,7 @@ public class PngStrategy3 {
 		return new PrimesResult(ALGORITHM_TYPE, (upper - lower), listString, timeElapsed, noOfPrimes);
 	}
 	
-	public static String task(int lower, int upper, int[] firstSegmentedPrimes, int firstPrimesLen) {
+	private static String task(int lower, int upper, int[] firstSegmentedPrimes, int firstPrimesLen) {
 		int range = (upper - lower);
 		array = new boolean[range];
 
